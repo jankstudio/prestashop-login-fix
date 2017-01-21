@@ -2545,7 +2545,7 @@
   ),
   'IdentityController' => 
   array (
-    'path' => '',
+    'path' => 'override/controllers/front/IdentityController.php',
     'type' => 'class',
     'override' => false,
   ),
@@ -2857,8 +2857,8 @@
   ),
   'ObjectModel' => 
   array (
-    'path' => '',
-    'type' => 'abstract class',
+    'path' => 'override/classes/ObjectModel.php',
+    'type' => 'class',
     'override' => false,
   ),
   'ObjectModelCore' => 

@@ -337,7 +337,7 @@
   ),
   'AdminController' => 
   array (
-    'path' => '',
+    'path' => 'override/classes/controller/AdminController.php',
     'type' => 'class',
     'override' => false,
   ),
@@ -1957,7 +1957,7 @@
   ),
   'Customer' => 
   array (
-    'path' => '',
+    'path' => 'override/classes/Customer.php',
     'type' => 'class',
     'override' => false,
   ),
@@ -2125,7 +2125,7 @@
   ),
   'Employee' => 
   array (
-    'path' => '',
+    'path' => 'override/classes/Employee.php',
     'type' => 'class',
     'override' => false,
   ),
@@ -4003,7 +4003,7 @@
   ),
   'Tools' => 
   array (
-    'path' => '',
+    'path' => 'override/classes/Tools.php',
     'type' => 'class',
     'override' => false,
   ),

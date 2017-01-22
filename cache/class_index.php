@@ -3181,7 +3181,7 @@
   ),
   'PasswordController' => 
   array (
-    'path' => '',
+    'path' => 'override/controllers/front/PasswordController.php',
     'type' => 'class',
     'override' => false,
   ),

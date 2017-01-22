@@ -33,6 +33,22 @@
 <p class="alert alert-success">{l s='Your password has been successfully reset and a confirmation has been sent to your email address:'} {if isset($customer_email)}{$customer_email|escape:'html':'UTF-8'|stripslashes}{/if}</p>
 {elseif isset($confirmation) && $confirmation == 2}
 <p class="alert alert-success">{l s='A confirmation email has been sent to your address:'} {if isset($customer_email)}{$customer_email|escape:'html':'UTF-8'|stripslashes}{/if}</p>
+{elseif isset($confirmation) && $confirmation == 3}
+<form method="post" class="std" id="form_passwordchange">
+    <fieldset>
+        <div class="form-group">
+            <label for="newpass">{l s='New password'}</label>
+            <input class="form-control validate" type="password" id="passwd" name="passwd" data-validate="isPasswd" />
+        </div>
+        <div class="form-group">
+            <label for="newpass">{l s='Confirm password'}</label>
+            <input class="form-control validate" type="password" id="passwd_confirm" name="passwd_confirm" data-validate="isPasswd" />
+        </div>
+		<p class="submit">
+            <button type="submit" class="btn btn-default button button-medium"><span>{l s='Change Password'}<i class="icon-chevron-right right"></i></span></button>
+		</p>
+    </fieldset>
+</form>
 {else}
 <p>{l s='Please enter the email address you used to register. We will then send you a new password. '}</p>
 <form action="{$request_uri|escape:'html':'UTF-8'}" method="post" class="std" id="form_forgotpassword">
